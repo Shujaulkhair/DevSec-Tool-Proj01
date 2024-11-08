@@ -30,4 +30,14 @@ public class AppTest {
     	assertEquals(expected, acctual);
     }
     
+    @Test
+    public void sumWithNegativeZero() {
+        
+    	int expected =0;
+    	int x = 0;
+    	int y = 0;
+    	App ap = new App();
+    	int acctual = ap.sum(x, y);
+    	assertEquals(expected, acctual);
+    }
 }
