@@ -40,4 +40,15 @@ public class AppTest {
     	int acctual = ap.sum(x, y);
     	assertEquals(expected, acctual);
     }
+    
+    @Test
+    public void sumWithNegativeMixedValue() {
+        
+    	int expected = -10;
+    	int x = 10;
+    	int y = -20;
+    	App ap = new App();
+    	int acctual = ap.sum(x, y);
+    	assertEquals(expected, acctual);
+    }
 }
